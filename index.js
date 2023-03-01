@@ -1,6 +1,11 @@
 const container = document.querySelector('.container');
+//const blue = document.querySelector('.blue');
+//const green = document.querySelector('.green');
+//blue.addEventListener('click',() => testColor);
+//test
+//const test = document.querySelector('.div');
 
-function createGrid(x){
+function createGrid(x,y){
     for(let i=1;i<=x;i++){
         const miniContainers = document.createElement('div');
         container.appendChild(miniContainers);
@@ -9,7 +14,12 @@ function createGrid(x){
             const divs = document.createElement('div');
             divs.classList = 'div';
             miniContainers.appendChild(divs);
-            divs.addEventListener('mouseover',() => divs.style.background = 'red');
+            
+                
+            
+            
+            divs.addEventListener('mouseover',() => divs.style.background = 'yellowgreen');
+            
             if(x==10){
                 divs.setAttribute('style','height: 97.5px;width: 100px;border:0.1px solid white;');
             }
@@ -48,12 +58,13 @@ function createGrid(x){
 }
 
 function gridSize(){
-    return prompt("enter the pen size in multiples of 10...!");
+    return prompt("enter the grid size in multiples of 10...!");
 }
 
-function Main(a,b){
-    let gridSizeValue = a();
-    b(gridSizeValue);
+function Main(gS,cG){
+    //let test1 = tC();
+    let gridSizeValue = gS();
+    cG(gridSizeValue);
 }
 
 
@@ -61,5 +72,9 @@ Main(gridSize,createGrid);
 
 
 
+//test
 
+//function testColor(){
+//    test.addEventListener('mouseover',() => test.style.background = 'skyblue');
+//}
 

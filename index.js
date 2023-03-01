@@ -14,7 +14,7 @@ function createGrid(x,y){
             const divs = document.createElement('div');
             divs.classList = 'div';
             miniContainers.appendChild(divs);
-            
+             
                 
             
             

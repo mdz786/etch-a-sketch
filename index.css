@@ -4,7 +4,7 @@
     height: 1000px;
     border: 5px solid rgb(207, 71, 207);
     background-color: white;
-}
+} 
 .container:hover{
     cursor:crosshair;
 }

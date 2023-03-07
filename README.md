@@ -1,5 +1,5 @@
 # etch-a-sketch
-> This is simple version of the Pixel art(without any tools).
+> This is simple version of the *Pixel art*.
 
 # purpose of this project
 > This project is to improve my DOM manipulation ability.
